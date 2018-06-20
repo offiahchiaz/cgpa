@@ -235,6 +235,12 @@ var appController = (function(cpgatCtrl, UICtrl) {
         init: function() {
             console.log('App started');
             setupEventListerners();
+            UICtrl.displayCGPA({
+                cgpa: 0,
+                availableScore: 0,
+                obtainedScore: 0,
+                percentage: -1
+            });
         }
     }
 })(CGPAController, UIController);
