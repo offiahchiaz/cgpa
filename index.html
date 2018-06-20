@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <title>Student Records' App</title>
+    </head>
+    <body>
+
+        <div class="top">
+            <div class="cgpa">
+                <div class="cgpa__title">
+                        CGPA for <span class="cgpa__title--month">%Year%</span> academic session:
+                </div>
+
+                <div class="cgpa__value"> 0.00</div>
+                
+                <div class="available__score clearfix">
+                    <div class="available__score--text">Total Available Score</div>
+                    <div class="right">
+                        <div class="available__score--value"> 0.00</div>
+                        <div class="available__score--percentage">&nbsp;</div>
+                    </div>
+                </div>
+                
+                <div class="obtained__score clearfix">
+                    <div class="obtained__score--text">Total Obtained Score</div>
+                    <div class="right clearfix">
+                        <div class="obtained__score--value"> 0.00</div>
+                        <div class="obtained__score--percentage">45%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="subject">
+                <div class="subject__container">
+                    <!-- <select class="subject__type">
+                        <option value="MAT" selected>MAT</option>
+                        <option value="ENG">ENG</option>
+                        <option value="PHY">PHY</option>
+                        <option value="CHE">CHE</option>
+                        <option value="GEO">GEO</option>
+                        <option value="ECO">ECO</option>
+                        <option value="BIO">BIO</option>
+                    </select> -->
+                    <input type="text" class="subject__description" placeholder="Subject description">
+                    <select class="subject__unit">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <input type="number" class="subject__score" placeholder="Score">
+                    <button class="subject__btn"><i class="ion-ios-checkmark-outline"></i></button>
+                </div>
+            </div>
+ 
+            <div class="container clearfix">
+                <div class="result">
+                    <h2 class="result__title">Result</h2>
+                    
+                    <div class="result__list">
+                        <!-- <div class="item clearfix" id="result-0">
+                                <div class="item__description">Mathematics</div>
+                                    <div class="item__unit">Mathematics</div>
+                                <div class="right clearfix">
+                                    <div class="item__score"> 78.00</div>
+                                    <div class="item__percentage">21%</div>
+                                    <div class="item__delete">
+                                        <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                    </div>
+                                </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="app.js" ></script>
+    </body>
+</html>
